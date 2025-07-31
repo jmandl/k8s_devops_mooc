@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: log-output
-  name: log-output
+    app: todo-app
+  name: todo-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: log-output
+      app: todo-app
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: log-output
+        app: todo-app
     spec:
       containers:
-      - image: jmandl/log_output:0.1
-        name: log-output-jwnjz
+      - image: jmandl/todo-app:0.1
+        name: todo-app
         resources: {}
 status: {}
