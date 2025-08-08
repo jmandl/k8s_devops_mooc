@@ -3,10 +3,7 @@
 
 Deploy with ```kubectl apply -f ./manifests/deployment.yaml```
 
-Troubleshooting pod ```kubectl run tshoot --rm -it --image=busybox -- sleep 60```
+Port Forward ```kubectl port-forward $(kubectl get pods -l app=todo-app -o=jsonpath='{@.items[0].metadata.name}') 5000:5000 &```
 
-Get IP and port ```kubectl logs $(kubectl get pods -l app=todo-app -o=jsonpath='{@.items[0].metadata.name}')```
+curl ```curl http://localhost:5000```
 
-WGET ```kubectl exec tshoot -i -t -- wget http://$IP:$PORT```
-
-Cat file ```kubectl exec tshoot -i -t -- cat index.html```
