@@ -11,3 +11,4 @@
 - [1.5.] (https://github.com/jmandl/k8s_devops_mooc/tree/1.5/todo_app/log_output)
 - [1.6.] (https://github.com/jmandl/k8s_devops_mooc/tree/1.6/todo_app/log_output)
 - [1.7.] (https://github.com/jmandl/k8s_devops_mooc/tree/1.7/todo_app/log_output)
+- [1.8.] (https://github.com/jmandl/k8s_devops_mooc/tree/1.7/todo_app/log_output)
