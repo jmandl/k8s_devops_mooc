@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: write-and-read-svc
+spec:
+  type: ClusterIP
+  selector:
+    app: write-and-read
+  ports:
+    - name: http
+      protocol: TCP
+      port: 2345
+      targetPort: 5000

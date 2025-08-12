@@ -13,5 +13,10 @@ if __name__ == "__main__":
     while True:
         timestamp = get_utc_timestamp()
         new_uuid = generate_uuid_loop()
+        try:
+            with open('/app/log/log.txt', 'a') as f:
+                f.write(str(new_uuid) + '\n')
+        except IOError as e:
+            print(f"An error occured while writing to the file: {e}")
         print(f"{timestamp}: {new_uuid}")
         time.sleep(5)

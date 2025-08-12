@@ -13,3 +13,4 @@
 - [1.7.] (https://github.com/jmandl/k8s_devops_mooc/tree/1.7/todo_app/log_output)
 - [1.8.] (https://github.com/jmandl/k8s_devops_mooc/tree/1.8/todo_app/log_output)
 - [1.9.] (https://github.com/jmandl/k8s_devops_mooc/tree/1.9/ping-pong/exercise)
+- [1.10.] (https://github.com/jmandl/k8s_devops_mooc/tree/1.10/log_output/exercise)
