@@ -17,8 +17,15 @@ spec:
       labels:
         app: ping-pong
     spec:
+      volumes:
+        - name: log-folder
+          persistentVolumeClaim:
+            claimName: log-pvc
       containers:
-      - image: jmandl/ping-pong:0.2
+      - image: jmandl/ping-pong:0.3
         name: ping-pong
+        volumeMounts:
+          - name: log-folder
+            mountPath: /app/ping-pong
         resources: {}
 status: {}
