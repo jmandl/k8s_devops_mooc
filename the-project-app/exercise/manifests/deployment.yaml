@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: the-project-app
+  name: the-project-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: the-project-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: the-project-app
+    spec:
+      containers:
+      - image: jmandl/the-project-app:0.1
+        name: the-project-app
+        resources: {}
+status: {}
