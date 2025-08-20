@@ -6,6 +6,16 @@
 <body>
     <h1>The project App</h1>
     <img src="{{ url_for('static', filename='random.jpg') }}" alt="My Image" width="500">
+    <form method="POST">
+        <input type="text" name="todo" id="todo" required>
+        <button type="submit">Create todo</button>
+    </form>
+    <ul>
+        {% for todo in todos %}
+            <li>{{ todo }}</li>
+        {% endfor %}
+    </ul>
+
     <p><b>DevOps with Kubernetes 2025</b></p>
 </body>
 </html>
