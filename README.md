@@ -17,3 +17,7 @@
 - [1.11.] (https://github.com/jmandl/k8s_devops_mooc/tree/1.11/ping-pong/exercise)
 - [1.12.] (https://github.com/jmandl/k8s_devops_mooc/tree/1.12/the-project-app/exercise)
 - [1.13.] (https://github.com/jmandl/k8s_devops_mooc/tree/1.13/the-project-app/exercise)
+
+### Chapter 3
+
+- [2.1.] (https://github.com/jmandl/k8s_devops_mooc/tree/2.1/exercices/ch3_2.1)
