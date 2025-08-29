@@ -21,3 +21,4 @@
 ### Chapter 3
 
 - [2.1.] (https://github.com/jmandl/k8s_devops_mooc/tree/2.1/exercices/ch3_2.1)
+- [2.2.] (https://github.com/jmandl/k8s_devops_mooc/tree/2.2/exercices/ch3_2.2)
