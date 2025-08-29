@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: write-and-read
+  namespace: exercises
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: write-and-read
+  template:
+    metadata:
+      labels:
+        app: write-and-read
+    spec:
+      volumes: 
+        - name: shared-folder
+          emptyDir: {}
+      containers:
+        - name: log-writer
+          imagePullPolicy: Always
+          image: jmandl/mooc_log_writer:0.1
+          volumeMounts: 
+          - name: shared-folder
+            mountPath: /app/log
+        - name: log-reader
+          imagePullPolicy: Always
+          image: jmandl/mooc_log_reader:0.1
+          ports:
+          - containerPort: 5000
+          volumeMounts: 
+          - name: shared-folder
+            mountPath: /app/log
