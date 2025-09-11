@@ -25,3 +25,4 @@
 - [2.3.] (https://github.com/jmandl/k8s_devops_mooc/tree/2.3/exercices/ch3_2.3)
 - [2.4.] (https://github.com/jmandl/k8s_devops_mooc/tree/2.4/exercices/ch3_2.4)
 - [2.5.] (https://github.com/jmandl/k8s_devops_mooc/tree/2.5/exercices/ch3_2.5)
+- [2.6.] (https://github.com/jmandl/k8s_devops_mooc/tree/2.6/exercices/ch3_2.6)

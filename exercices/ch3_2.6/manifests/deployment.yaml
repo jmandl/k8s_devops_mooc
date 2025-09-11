@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: the-project-app
+  name: the-project-app
+  namespace: project
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: the-project-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: the-project-app
+    spec:
+      containers:
+      - image: jmandl/the-project-app:0.3
+        name: the-project-app
+        imagePullPolicy: Always
+        env:
+        - name: PORT
+          valueFrom:
+            configMapKeyRef:
+              name: the-project-app-config
+              key: PORT
+        - name: image_picture
+          valueFrom:
+            configMapKeyRef:
+              name: the-project-app-config
+              key: image_picture
+        resources: {}
+status: {}

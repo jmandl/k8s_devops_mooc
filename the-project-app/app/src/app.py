@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from flask import Flask, render_template, request
 
 def download_picture():
-    image_url = 'https://picsum.photos/250'
+    image_url = os.getenv("image_picture")
     response = requests.get(image_url)
     if response.status_code == 200:
         with open('static/random.jpg', 'wb') as f:
@@ -33,7 +33,7 @@ app = Flask(__name__)
 old_time = datetime.now()
 download_picture()
 
-PORT = int(os.getenv("PORT", 5000))
+PORT = int(os.getenv("PORT"))
 
 @app.route('/', methods=["GET", "POST"])
 def index():
