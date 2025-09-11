@@ -14,7 +14,7 @@ def read_todos():
     if os.path.exists(todos_file_path):
         with open("static/todos.json", "r") as file:
             for line in file.readlines():
-                todos.append(line)
+                todos.append(line.strip())
     else:
         todos = []
 
@@ -31,10 +31,10 @@ def index():
         if len(todo_item) <= 140:
             append_to_file(todo_item)
         read_todos()
-        return render_template('index.html', todos=todos)
+        return todos
     else:
         read_todos()
-        return render_template('index.html', todos=todos)
+        return todos
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=PORT)

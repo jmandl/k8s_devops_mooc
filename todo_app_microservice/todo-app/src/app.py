@@ -47,7 +47,7 @@ def index():
 
     backend_result = requests.get('http://todo-backend:5000/todos')
 
-    return render_template('index.html', todos=backend_result.text)
+    return render_template('index.html', todos=backend_result.json())
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=PORT)
