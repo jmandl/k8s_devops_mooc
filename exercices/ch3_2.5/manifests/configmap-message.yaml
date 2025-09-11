@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pingpong-message-config
+data:
+  message: This is a configmap message
