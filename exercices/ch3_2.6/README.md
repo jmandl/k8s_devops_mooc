@@ -1,4 +1,4 @@
-# Chapter 3 - Exercise 2.5. 
+# Chapter 3 - Exercise 2.6. 
 ---
 
 Create Namespace ```kubectl apply -f ./manifests/namespace.yaml```
