@@ -63,6 +63,8 @@ def index():
         todo_item = request.form.get("todo")
         if len(todo_item) <= 140:
             append_to_file(todo_item)
+        else:
+            print("todo bigger than 140 caracters")
         todos = read_todos()
         return render_template('index.html', todos=todos)
     else:

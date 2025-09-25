@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: theprojectapp
+  name: theprojectapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: theprojectapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: theprojectapp
+    spec:
+      containers:
+      - image: jmandl/theprojectapp:3.2.10
+        name: theprojectapp
+        env:
+        - name: DB_USERNAME
+          valueFrom:
+            configMapKeyRef:
+              name: theprojectapp-cm
+              key: DB_USERNAME
+        - name: DB_PASSWORD
+          valueFrom:
+            configMapKeyRef:
+              name: theprojectapp-cm
+              key: DB_PASSWORD
+        resources: {}
+status: {}
