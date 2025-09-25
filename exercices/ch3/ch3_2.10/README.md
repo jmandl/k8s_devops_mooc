@@ -1,4 +1,4 @@
-# Chapter 3 - Exercise 2.9. 
+# Chapter 3 - Exercise 2.10. 
 ---
 
 Apply new deployment ```kubectl apply -f ./manifests/deployment.yaml```
