@@ -35,4 +35,4 @@
 - [3.1.] (https://github.com/jmandl/k8s_devops_mooc/tree/3.1/exercices/ch4/ch4_3.1)
 - [3.2.] (https://github.com/jmandl/k8s_devops_mooc/tree/3.2/exercices/ch4/ch4_3.2)
 - [3.3.] (https://github.com/jmandl/k8s_devops_mooc/tree/3.3/exercices/ch4/ch4_3.3)
-- [3.4.] (https://github.com/jmandl/k8s_devops_mooc/tree/3.3/exercices/ch4/ch4_3.4)
+- [3.4.] (https://github.com/jmandl/k8s_devops_mooc/tree/3.4/exercices/ch4/ch4_3.4)
